@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<WindowsPerformanceRecorder Version="1.0">
+    <Profiles>
+        <EventProvider
+            Id="TechDaysDemo"
+            Name="174A1B24-F117-409D-BB57-6B178201ADCB" />
+                    
+        <Profile
+            Description="TechDaysDemo WPR Profile"
+            DetailLevel="Verbose"
+            Id="TechDaysDemo.Verbose.File"
+            LoggingMode="File"
+            Name="TechDaysDemo">
+            <Collectors>
+                <EventCollectorId Value="EventCollector_WPREventCollectorInFile">
+                    <EventProviders>
+                        <EventProviderId Value="TechDaysDemo" />
+                    </EventProviders>
+                </EventCollectorId>
+            </Collectors>
+        </Profile>
+    </Profiles>
+</WindowsPerformanceRecorder>
